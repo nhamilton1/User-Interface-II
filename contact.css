@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Raleway&display=swap');
+
+/* font-family: 'Lato', sans-serif;
+font-family: 'Raleway', sans-serif; */
+
+html {
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    height: 165px;
+    width: 100%;
+    background-color: #dbfff8;
+    border-bottom: 2px solid black;
+}
+
+.myNameContainer{
+    /* border: 1px solid black; */
+    display: inline-block
+}
+
+h1 {
+    /* border: 1px solid black; */
+    margin-left: 40px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+nav {
+    /* border: 1px solid black; */
+    display:flex;
+    margin-top:10px;
+    margin-left:70px;
+}
+
+nav a{
+    border: 2px solid black;
+    text-decoration: none;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 10px 20px 10px 20px;
+    background-color: white;
+    color:black;
+}
+
+a:first-child {
+    background-color: black;
+    color:white;
+}
+
+
+.contactMebox {
+    border: 1px solid black;
+    display: flex;
+    flex-flow: row wrap;
+    height: 55%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    /* border: 1px solid black; */
+    font-size: 5rem;
+}
+
+p {
+    /* border: 1px solid black; */
+    font-size: 2rem;
+}
+
+
+.footerflex {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    background-color: #dbfff8;
+
+}
+
+.footerflex h3{
+    text-align: center;
+}
+
+.footerflex a{
+    display: flex;
+    justify-content: center;
+    border: 2.5px solid black;
+    text-decoration: none;
+    padding: 10px 30px 10px 30px;
+    background-color: white;
+    color: black;
+}
+
+.socialmedia {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.socialmedia a{
+    border: 0px solid black;
+    background-color: #dbfff8;
+}
