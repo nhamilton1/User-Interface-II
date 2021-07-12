@@ -203,13 +203,6 @@ button:hover {
     transition: 2s;
 }
 
-@media (max-width: 500px){
-    .myProjectSection img{
-        /* border: 1px solid black; */
-        width: 400px;  
-    }
-}
-
 @media (max-width: 800px){
     nav {
         justify-content: center;
@@ -220,13 +213,17 @@ button:hover {
     }
     .eightprojects {
         flex-flow: row wrap;
-        height: 1000px;
+        height: 70vh;
     }
 
 }
 
 
 @media (max-width: 500px) {
+    .myProjectSection img{
+        /* border: 1px solid black; */
+        width: 400px;  
+    }
     nav {
         /* border: 1px solid black; */
         display:flex;
@@ -251,7 +248,7 @@ button:hover {
     }
     .eightprojects {
         flex-flow: row wrap;
-        height: 2000px;
+        height: 80vh;
     }
 } 
 
