@@ -5,11 +5,18 @@ font-family: 'Raleway', sans-serif; */
 
 html {
     font-family: 'Lato', sans-serif;
+    font-size: 62.5%;
 }
 
 body {
     margin: 0 auto;
 }
+
+* {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
 
 header {
     height: 165px;
@@ -28,13 +35,14 @@ h1 {
     margin-left: 40px;
     margin-top: 25px;
     margin-bottom: 5px;
-    font-size: 2rem;
+    font-size: 3rem;
     font-family: 'Raleway', sans-serif;
 }
 
 nav {
     /* border: 1px solid black; */
     display:flex;
+    flex-flow: row wrap;
     margin-top:10px;
     margin-left:70px;
 }
@@ -42,11 +50,12 @@ nav {
 nav a{
     border: 2px solid black;
     text-decoration: none;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: flex-start;
     padding: 10px 20px 10px 20px;
     background-color: white;
     color:black;
+    font-size: 1.5rem;
 }
 
 a:first-child {
@@ -58,8 +67,7 @@ a:first-child {
 .mainProjectSection {
     display: flex;
     /* border: 1px solid black; */
-    flex-direction: row;
-    align-content: space-evenly;
+    flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -70,7 +78,7 @@ img {
 
 .mainProjectSection .myProjectSection {
     /* border: 1px solid black; */
-    width: 500px;
+    width: 400px;
     height: 50%;
     margin: 10px;
 }
@@ -78,8 +86,22 @@ img {
 .myProjectSection{
     /* border: 1px solid black; */
     display:flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     align-items:flex-start;
+}
+
+.myProjectSection button{
+    padding: 10px 20px 10px 20px;
+    border: 1.5px solid black;
+    font-size: 1.5rem;
+}
+
+.myProjectSection h2{
+    font-size: 2.5rem;
+}
+
+.myProjectSection p{
+    font-size: 1.5rem;
 }
 
 .myProjectSection img:hover{
@@ -97,7 +119,9 @@ img {
     overflow: hidden;
 }
 
-
+.eightprojects p{
+    font-size: 1.5rem;
+}
 
 .image{
     border: 1px solid black;
@@ -131,6 +155,7 @@ img {
 
 .footerflex h3{
     text-align: center;
+    font-size: 3rem;
 }
 
 .footerflex a{
@@ -141,6 +166,7 @@ img {
     padding: 10px 10px 10px 10px;
     background-color: white;
     color: black;
+    font-size: 2rem;
 }
 
 button:hover {
@@ -176,3 +202,56 @@ button:hover {
     padding: 15px 15px 15px 15px;
     transition: 2s;
 }
+
+@media (max-width: 500px){
+    .myProjectSection img{
+        /* border: 1px solid black; */
+        width: 400px;  
+    }
+}
+
+@media (max-width: 800px){
+    nav {
+        justify-content: center;
+        align-items: center;
+    }
+    h1 {
+        text-align: center;
+    }
+    .eightprojects {
+        flex-flow: row wrap;
+        height: 1000px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+    nav {
+        /* border: 1px solid black; */
+        display:flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        margin-left: 30px;
+    }
+    header {
+        display: flex;
+        flex-flow: column wrap;
+        height: 275px;
+    }
+    nav a:nth-child(1) {
+        padding: 10px 24px 10px 25px;
+    }
+    nav a:nth-child(2) {
+        padding: 10px 24px 10px 25px;
+    }
+    h1 {
+        text-align: center;
+    }
+    .eightprojects {
+        flex-flow: row wrap;
+        height: 2000px;
+    }
+} 
+
